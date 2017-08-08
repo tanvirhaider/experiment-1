@@ -1,0 +1,23 @@
+.FPGSlider {
+  margin: 0 auto;
+
+  button[class*="slick-arrow"] {
+    background-color: red;
+    z-index: 1;
+  }
+  button[class*="slick-prev"] {
+    left: 0;
+  }
+  button[class*="slick-next"] {
+    right: 0;
+  }
+  
+  [data-wrapper] {
+    
+  }
+
+  [data-box] {
+    padding: 0 10px;
+  }
+}
+

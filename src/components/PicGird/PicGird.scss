@@ -1,0 +1,95 @@
+@import '~nytpi-sass-utils/index';
+@import '~nytpi-sass-utils/size-class';
+@import '~nytpi-sass-utils/font-size';
+
+@include size-class(regular) {
+    @media (min-width: 1358px) {
+        :root{
+            --border-bottom: -7%;
+        }
+    }
+    :root{
+        --show-desktop: block;
+        --show-mobile: none !important;
+        --caption-width: 80%;
+        --border-bottom: -4%;
+        --border-bottom2: -4%;
+    }
+}
+@include size-class(compact) {
+    :root{
+        --show-desktop: none !important;
+        --show-mobile: block;
+        --border-position: relative;
+        --grid-position: absolute;
+        --caption-width: 90%;
+    }
+    .pics{
+        margin-top: 3%;
+    }
+    .PicGird{
+        [class^="ppc--Figure--caption"]{
+            margin-bottom: 0;
+        }
+    }
+}
+@include size-class(tablet-portrait){
+    .PicGird{
+        [class^=ppc--Placement--content]{
+            min-width: 450px !important;
+            width: 80% !important;
+            margin: 0 auto;
+        }
+        
+    }
+}
+.showDesktop{
+    display: var(--show-desktop);
+}
+.showMobile{
+    display: var(--show-mobile);
+}
+
+.PicGird {
+    .caption{
+        font-size: 12px;
+        line-height: 14px;
+        width: var(--caption-width);
+        margin: 0 auto;
+        color: #6d6e71;
+    }
+    .main{
+        position: relative;
+    }
+    .borders{
+        position: absolute;
+        width: 7%;
+    }
+    .borderTop{
+        top: -8%;
+        left: -6%;
+    }
+    .borderBottom{
+        bottom: var(--border-bottom2);
+        right: -5%;
+    }
+    .borderTopM{
+        margin-bottom: 5%;
+    }
+    .borderBottomM{
+        margin-top: 4%;
+    }
+    &.gird1{
+        .borderTop{
+            width: 17%;
+            left: -7%;
+        }
+        .borderBottom{
+            width: 9%;
+            bottom: var(--border-bottom);
+            right: -4%;
+        }
+    }
+    
+}
+

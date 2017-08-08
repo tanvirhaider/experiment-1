@@ -1,0 +1,52 @@
+@import '~nytpi-sass-utils/index';
+@import '~nytpi-sass-utils/size-class';
+@import '~nytpi-sass-utils/font-size';
+
+@import url('https://fonts.googleapis.com/css?family=Kite+One:400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+@include set-pspx-ratio(1);
+
+@include size-class(tablet-portrait){
+  
+}
+@include size-class(regular) {
+    @media (min-width: 1447px) {
+       
+    }
+    @media (min-width: 1400px) {
+      
+    }
+    @media (max-width: 1000px) {
+       
+    }
+    @media (max-width: 800px) {
+       
+    }
+   
+  
+}
+@include size-class(compact) {
+    @media (max-width: 386px) {
+     
+    }
+    @media (max-width: 400px){
+      
+    }
+    @media (min-width: 350px){
+       
+    }
+   
+    
+   
+}
+
+
+html, body{
+    min-height: 556px;
+}
+
+
+
+
+@include set-pspx-ratio(2);

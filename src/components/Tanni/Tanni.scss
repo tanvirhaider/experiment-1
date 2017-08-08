@@ -1,0 +1,49 @@
+@import '~nytpi-sass-utils/index';
+@import '~nytpi-sass-utils/size-class';
+@import '~nytpi-sass-utils/font-size';
+
+div {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.fullBleed {
+     width: 111%;
+     margin-right: -5.17241%;
+    margin-left: -5.17241%;
+}
+
+
+.yoMTV {
+    font-size: 40px;
+    text-align: center;
+   
+    background-color: #ccc;
+
+    padding-left: 0px;
+    padding-right: 0px;
+
+    
+}
+
+.particlebg {
+    background-color: black;
+}
+
+.bgImage {
+
+    width: 100%;
+
+    .images {
+        opacity: 0.5;
+    }
+}
+
+//  .images {
+//         opacity: 0.5;
+//     }
+
+
+.yoLanda {
+    height: 500px;
+}

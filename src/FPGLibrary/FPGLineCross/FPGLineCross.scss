@@ -1,0 +1,11 @@
+.FPGLineCross {
+  background-repeat: no-repeat;
+  transition-property: none;
+  
+  [data-active] & {
+    background-position-x: 0;
+    transition-property: background-position-x;
+    transition-timing-function: linear;
+  }
+}
+

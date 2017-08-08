@@ -1,0 +1,81 @@
+@import '~nytpi-sass-utils/index';
+@import '~nytpi-sass-utils/size-class';
+@import '~nytpi-sass-utils/font-size';
+
+
+@include size-class(tablet-portrait) { 
+    :root{
+        --h1-size: 4.1vw;
+        --h1-line-height: 6vw;
+        --credit-line-height: 3.2vw;
+        --credit-size: 2.5vw;
+        --credit-space: 2px;
+    }
+}
+@include size-class(shell) {
+    :root{
+        --h1-size: 45px;
+        --h1-line-height: 72px;
+        --credit-line-height: 29px;
+        --credit-size: 20px;
+    }
+}
+@include size-class(regular) {
+    :root{
+        --h1-size: 2.8vw;
+        --h1-line-height: 4.5vw;
+        --quote-bottom: -3%;
+        --credit-line-height: 1.8vw;
+        --credit-size: 1.2vw;
+        --credit-space: 3px;
+    }
+}
+
+@include size-class(compact) {
+    :root{
+        --h1-size: 9vw;
+        --h1-line-height: 12.5vw;
+        --quote-bottom: 0%;
+        --credit-size: 16px;
+        --credit-space: 1px;
+        --credit-line-height: 24px;
+    }
+}
+
+.pullQuate{
+    span, h1{
+        display: inline-block;
+        font-size: var(--h1-size);
+        line-height: var(--h1-line-height);
+        font-family: 'Kite One', sans-serif;
+        color: #d52b1e;
+        font-weight: 400;
+    }
+    span{
+        width: 3%;
+        vertical-align: top;
+    }
+    .quoteBorder{
+        margin-left: -13%;
+        margin-bottom: var(--quote-bottom);
+        display: block;
+    }
+    .words{
+        display: inline-block;
+        width: 95%;
+        vertical-align: top;
+        .credit{
+            margin-top: 6%;
+        }
+        p{
+            display: inline-block;
+            vertical-align: top;
+            letter-spacing: var(--credit-space);
+            font-weight: 300;
+            color: #d52b1e;
+            font-size: var(--credit-size);
+            line-height: var(--credit-line-height);
+        }
+    }
+}
+

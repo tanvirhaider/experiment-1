@@ -1,0 +1,52 @@
+.FPGHeader {
+  position: relative;
+  margin-left: -5.17241%;
+  margin-right: -5.17241%;
+}
+
+.scrollArrow {
+  position: absolute;
+  bottom: 19%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 10;
+  width: 42px;
+
+  &[data-fix] {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    .placeBox{
+      height: calc(100vh - 118px - 42px);
+      visibility: hidden
+    }
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+.scrollArrowPlace{
+  opacity: 0;
+  position: absolute;
+  bottom: 19%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 0;
+  width: 42px;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+@media (max-width: 539px) {
+  .scrollArrow, .scrollArrowPlace{
+    display: none;
+  }
+}
+
+
+
+

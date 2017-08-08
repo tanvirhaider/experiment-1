@@ -1,0 +1,14 @@
+.FPGParagraph {
+  font-size: 16px; 
+  line-height: 2;
+  width: 44.6%;
+  min-width: 576px;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .FPGParagraph{
+    width: 100%;
+    min-width: 0;
+  }
+}
