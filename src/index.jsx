@@ -17,16 +17,8 @@ import {
 } from 'paidpost-core';
 
 
-import FPGAnimator from './FPGLibrary/FPGAnimator';
-
-import HeaderPart from './components/HeaderPart';
-import PullQuate from './components/PullQuate';
-import PullQuate2 from './components/PullQuate2';
-import PicGird from './components/PicGird';
-import Footer from './components/Footer';
 
 import Tanni from './components/Tanni';
-
 import scss from './style.scss';
 import data from './data.json';
 
@@ -36,8 +28,8 @@ export default () => (
   <PaidPostArticle>
 
   <Tanni  
-    caption={data.bodyCopy.copy3.pullQuate}
-    credit={data.bodyCopy.copy3.Author}
+    caption={"nothing"}
+    credit={"nothing really"}
     desktopImg={require('./images/Header.jpg')}
   />
 

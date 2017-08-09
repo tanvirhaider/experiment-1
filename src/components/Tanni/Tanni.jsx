@@ -6,8 +6,7 @@ import Particles from 'react-particles-js';
 
 
 let runtimeObj;
-//import classNames from 'classnames';
-//import PropTypes from 'prop-types';
+
  import {
   Picture,
   FullBleed,
@@ -15,7 +14,6 @@ let runtimeObj;
   breakpoints,
 } from 'paidpost-core';
 
-//import FPGAnimator from '../../FPGLibrary/FPGAnimator';
 
 import scss from './Tanni.scss';
 import data from '../../data.json';
